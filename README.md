@@ -1,20 +1,9 @@
-# Fin Feather Fur Applications
+# Unnamed Idle Roleplaying Game
 
-## List of Apps
-* Bow Repair Worksheet
-* Label Print Service
-* Safe Delivery Worksheet
-* Transfer Order Creation Application
-* Used Gun Log Application
+## List of current features
 
-## Bow Repair Log
-
-## Safe Delivery Log
-
-## Transfer Order Log
-
-## Used Gun Log
-
-## Label Print Service
-
-## Common Application Functionality
+- Resources that can be incremented and decremented
+- Bonuses that can be added to resources to increase or decrease the rate in which they are incremented
+- Spells that can be cast with varying effects
+- A shop where bonuses can be purchased
+- Actions that can be performed that will spend and increase resources
