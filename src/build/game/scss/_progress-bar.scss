@@ -1,0 +1,8 @@
+@use 'colors';
+
+.progress-bar-bg {
+    max-height: 10px;
+    width: 100%;
+    border-left: 2px solid colors.$fg;
+    border-right: 2px solid colors.$fg;
+}

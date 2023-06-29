@@ -1,0 +1,94 @@
+@use 'progress-bar';
+@use 'pond';
+@use 'colors';
+@use 'garden';
+@use 'actions';
+@use 'upgrades';
+@use 'resources';
+@use 'spellbook';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10pt;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+body {
+    background-color: colors.$bg;
+    color: colors.$fg;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    padding: 0.5rem;
+    border: 2px solid colors.$fg;
+    cursor: pointer;
+    margin: 0 0.1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    min-height: 34px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.header-container {
+    border-bottom: 2px solid colors.$fg;
+    font-weight: bold;
+    padding: 0.25rem;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.panel {
+    padding: 0.5rem;
+    .panel-header {
+        border: 2px solid colors.$fg;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem;
+    }
+}
+
+.tooltip {
+    background-color: colors.$bg;
+    border: 1px solid colors.$fg;
+    padding: 0.5rem;
+    z-index: 1000;
+    .bonus {
+        margin: 1px 0
+    }
+    .tooltip-header, .bonus-header, .tooltip-2-col {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: end;
+    }
+    .tooltip-line {
+        margin: 0;
+    }
+    .tooltip-h {
+        font-size: 1.1rem;
+    }
+}

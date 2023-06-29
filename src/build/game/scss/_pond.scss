@@ -1,0 +1,36 @@
+@use 'colors';
+.pond {
+    grid-column: 2/4;
+}
+
+.pond-bar {
+    width: 85%;
+    height: 15px;
+    background-color: colors.$blue;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pond-bar-range {
+    width: 15px;
+    height: 15px;
+    margin: -4px;
+    border-top: 4px solid colors.$bg;
+    border-right: 4px solid colors.$bg;
+    border-left: 4px solid colors.$crimson;
+    border-bottom: 4px solid colors.$crimson;
+    margin-left: 95%;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+}
+
+.pond-bar-fish {
+    height: 15px;
+    width: 300px;
+    background-color: colors.$blue-darker;
+    display: inline-block;
+    left: calc(100% - 300px);
+    position: absolute;
+    z-index: 1;
+}

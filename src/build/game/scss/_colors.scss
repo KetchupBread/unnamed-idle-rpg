@@ -1,0 +1,177 @@
+$bg: #fefcf3;
+$fg: #000000;
+$yellow: #ffd700;
+$green: #2e8b57;
+$crimson: #dc143c;
+$green-dark: #006a4e;
+$purple: #400C60;
+$slate: #4e5a65;
+$beige: #cccc99;
+$blue: #00aff5;
+$blue-dark: #0080b3;
+$blue-darker: #005b80;
+$brown: #3f2a14;
+$silver: #c0c0c0;
+$gold: #ffd700;
+
+.b-brown {
+    border-color: $brown;
+}
+
+.brown {
+    color: $brown;
+}
+
+.brown-b {
+    background: $brown;
+}
+
+.beige {
+    color: $beige;
+}
+
+.beige-b {
+    background-color: $beige;
+}
+
+.prestige {
+    background: radial-gradient($crimson, $purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.prestige-b {
+    background: linear-gradient(to right, $crimson, $purple);
+}
+
+.fish {
+    background: linear-gradient($blue, $silver);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.elvenfoil {
+    background: linear-gradient($green-dark, $gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.elvenfoil-b {
+    background: linear-gradient(to right, $green-dark, $gold);
+}
+
+.b-elvenfoil {
+    border-image: linear-gradient(to right, $green-dark, $gold) 20;
+}
+
+.demon-sprout {
+    background: linear-gradient(to right, $green-dark, $crimson);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.demon-sprout-b {
+    background: linear-gradient(to right, $green-dark, $crimson);
+}
+
+.b-demon-sprout {
+    border-image: linear-gradient(to right, $green-dark, $crimson) 20;
+}
+
+.arrachs-web {
+    background: linear-gradient($green-dark, $beige);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.arrachs-web-b {
+    background: linear-gradient(to right, $green-dark, $beige);
+}
+
+.b-arrachs-web {
+    border-image: linear-gradient(to right, $green-dark, $beige) 20;
+}
+
+.worms-tooth {
+    background: linear-gradient($green-dark, $green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.worms-tooth-b {
+    background: linear-gradient(to right, $green-dark, $green);
+}
+
+.b-worms-tooth {
+    border-image: linear-gradient(to right, $green-dark, $green) 20;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.green {
+    color: $green;
+}
+
+.b-green-dark {
+    border-color: $green-dark;
+}
+
+.green-dark {
+    color: $green-dark;
+}
+
+.green-dark-b {
+    background: $green-dark;
+}
+
+.purple {
+    color: $purple;
+}
+
+.crimson {
+    color: $crimson;
+}
+
+.blue {
+    color: $blue;
+}
+
+.ambrosia {
+    animation: ambrosia-animation 2s infinite;
+    animation-direction: alternate;
+    text-shadow: 1px 1px;
+}
+
+@keyframes ambrosia-animation {
+    0% {
+        color: $purple;
+    }
+    50% {
+        color: $crimson;
+    }
+    100% {
+        color: $blue;
+    }
+}
+
+.runestone {
+    background: linear-gradient($slate, $fg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.seed {
+    background: conic-gradient($green-dark, $brown);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

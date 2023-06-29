@@ -1,0 +1,40 @@
+@use 'colors';
+
+.spell-tag-container {
+    .spell-container {
+        padding: 0.5rem 0;
+    }
+}
+
+.spell-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2px 0;
+    border: 2px solid colors.$fg;
+    text-align: center;
+    cursor: pointer;
+    .spell-tag-name {
+        grid-column: 2/3;
+    }
+    .spell-arrow {
+        grid-column: 3/4;
+        text-align: right;
+        padding-right: 0.25rem;
+    }
+}
+
+
+.spell-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid colors.$fg;
+    padding: 0.25rem;
+    cursor: pointer;
+    .spell-duration {
+        text-align: right;
+    }
+    &.active {
+        background-color: colors.$fg;
+        color: colors.$bg;
+    }
+}
