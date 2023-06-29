@@ -1,0 +1,24 @@
+{
+  "gameSpeed": 50,
+  "resources": [
+    {
+      "name": "Energy",
+      "id": 0,
+      "amount": 0,
+      "amountMax": 10,
+      "baseRate": 0.50,
+      "modifiers": { },
+      "unlocked": true
+    }
+  ],
+  "actions": [
+    {
+      "name": "Test Action",
+      "id": 0,
+      "unlocked": true,
+      "costs": [
+        { "id": 0, "amount": 10 }
+      ]
+    }
+  ]
+}
